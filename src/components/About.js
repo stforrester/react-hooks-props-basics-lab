@@ -1,4 +1,5 @@
 import React from "react";
+import Links from "./Links"
 
 function About(props) {
   return (
@@ -7,6 +8,7 @@ function About(props) {
       {props.bio ? <p>{props.bio}</p> : null}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
       {/* add your <Links /> component here */}
+      <Links github={props.githubLink} linkedin={props.linkedinLink} />
     </div>
   );
 }
